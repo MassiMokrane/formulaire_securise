@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulaire de Contact</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Script reCAPTCHA -->
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+  </head>
+  <body>
+    <div class="home-hero_formulaire">
+      <h2>Contactez-nous</h2>
+      <form id="contactForm">
+        <label for="name">Nom :</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email :</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message :</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <!-- reCAPTCHA v2 -->
+        <div
+          class="g-recaptcha"
+          data-sitekey="6LdaPzcrAAAAAOFkOXEeuQjAVYBsA3pfcijwFxCq"
+        ></div>
+        <p><a href="index.html">← Retour à l'accueil</a></p>
+
+        <button type="submit">Envoyer</button>
+      </form>
+    </div>
+
+    <script src="./js/contact.js"></script>
+  </body>
+</html>
